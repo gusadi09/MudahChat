@@ -19,7 +19,7 @@ struct ChatRoomHeader: View {
 				.frame(height: geo.size.height/12)
 				.clipShape(Circle())
 
-			Text("Mudah Assistant")
+			Text(LocalizationText.chatRoomHeaderTitle)
 				.font(.system(size: 14, weight: .semibold))
 				.foregroundColor(.white)
 

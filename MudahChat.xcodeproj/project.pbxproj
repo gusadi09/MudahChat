@@ -31,6 +31,10 @@
 		EC67680128C9A38300C72B58 /* ChatRoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6767FF28C9A38300C72B58 /* ChatRoomViewModel.swift */; };
 		EC67680428C9A55C00C72B58 /* ChatRoomHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC67680328C9A55C00C72B58 /* ChatRoomHeader.swift */; };
 		EC67680528C9A55C00C72B58 /* ChatRoomHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC67680328C9A55C00C72B58 /* ChatRoomHeader.swift */; };
+		EC67680A28C9AE0D00C72B58 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC67680D28C9AE0D00C72B58 /* Localizable.strings */; };
+		EC67680B28C9AE0D00C72B58 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC67680D28C9AE0D00C72B58 /* Localizable.strings */; };
+		EC67681028C9AE3E00C72B58 /* LocalizationText.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC67680F28C9AE3E00C72B58 /* LocalizationText.swift */; };
+		EC67681128C9AE3E00C72B58 /* LocalizationText.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC67680F28C9AE3E00C72B58 /* LocalizationText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +74,8 @@
 		EC6767F828C9A10000C72B58 /* Color+General.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+General.swift"; sourceTree = "<group>"; };
 		EC6767FF28C9A38300C72B58 /* ChatRoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewModel.swift; sourceTree = "<group>"; };
 		EC67680328C9A55C00C72B58 /* ChatRoomHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomHeader.swift; sourceTree = "<group>"; };
+		EC67680C28C9AE0D00C72B58 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EC67680F28C9AE3E00C72B58 /* LocalizationText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +170,8 @@
 		EC6767EB28C99FA200C72B58 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				EC67680E28C9AE2D00C72B58 /* Enum */,
+				EC67680628C9ADF100C72B58 /* Localization */,
 				EC67680228C9A54800C72B58 /* Component */,
 				EC6767F228C9A0CD00C72B58 /* Extension */,
 				EC6767EE28C9A02000C72B58 /* Resource */,
@@ -263,6 +271,22 @@
 				EC67680328C9A55C00C72B58 /* ChatRoomHeader.swift */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		EC67680628C9ADF100C72B58 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				EC67680D28C9AE0D00C72B58 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		EC67680E28C9AE2D00C72B58 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				EC67680F28C9AE3E00C72B58 /* LocalizationText.swift */,
+			);
+			path = Enum;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,6 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC6767DB28C99EFF00C72B58 /* Color.xcassets in Resources */,
+				EC67680A28C9AE0D00C72B58 /* Localizable.strings in Resources */,
 				EC6767F028C9A04E00C72B58 /* Image.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,6 +425,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC6767DC28C99EFF00C72B58 /* Color.xcassets in Resources */,
+				EC67680B28C9AE0D00C72B58 /* Localizable.strings in Resources */,
 				EC6767F128C9A04E00C72B58 /* Image.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +454,7 @@
 				EC6767D328C99EFF00C72B58 /* MudahChat.xcdatamodeld in Sources */,
 				EC6767D928C99EFF00C72B58 /* Persistence.swift in Sources */,
 				EC6767D528C99EFF00C72B58 /* MudahChatApp.swift in Sources */,
+				EC67681028C9AE3E00C72B58 /* LocalizationText.swift in Sources */,
 				EC6767F628C9A0F600C72B58 /* Image+General.swift in Sources */,
 				EC6767F928C9A10000C72B58 /* Color+General.swift in Sources */,
 				EC67680428C9A55C00C72B58 /* ChatRoomHeader.swift in Sources */,
@@ -443,6 +470,7 @@
 				EC6767D428C99EFF00C72B58 /* MudahChat.xcdatamodeld in Sources */,
 				EC6767DA28C99EFF00C72B58 /* Persistence.swift in Sources */,
 				EC6767D628C99EFF00C72B58 /* MudahChatApp.swift in Sources */,
+				EC67681128C9AE3E00C72B58 /* LocalizationText.swift in Sources */,
 				EC6767F728C9A0F600C72B58 /* Image+General.swift in Sources */,
 				EC6767FA28C9A10000C72B58 /* Color+General.swift in Sources */,
 				EC67680528C9A55C00C72B58 /* ChatRoomHeader.swift in Sources */,
@@ -483,6 +511,17 @@
 			targetProxy = EC6767CC28C99EFF00C72B58 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC67680D28C9AE0D00C72B58 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC67680C28C9AE0D00C72B58 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		EC6767DD28C99EFF00C72B58 /* Debug */ = {
