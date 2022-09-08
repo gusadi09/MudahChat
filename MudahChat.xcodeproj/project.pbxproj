@@ -57,7 +57,6 @@
 		ECFAF63628C9C46B004327E9 /* ChatType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF63528C9C46B004327E9 /* ChatType.swift */; };
 		ECFAF63928C9C598004327E9 /* Date+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF63828C9C598004327E9 /* Date+String.swift */; };
 		ECFAF63B28C9C5BA004327E9 /* DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF63A28C9C5BA004327E9 /* DateFormat.swift */; };
-		ECFAF64028C9C5DA004327E9 /* OptionalDouble+OrZero.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF63C28C9C5DA004327E9 /* OptionalDouble+OrZero.swift */; };
 		ECFAF64128C9C5DA004327E9 /* OptionalInt+orZero.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF63D28C9C5DA004327E9 /* OptionalInt+orZero.swift */; };
 		ECFAF64228C9C5DA004327E9 /* OptionalString+OrEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF63E28C9C5DA004327E9 /* OptionalString+OrEmpty.swift */; };
 		ECFAF64328C9C5DA004327E9 /* OptionalDate+orCurrentDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF63F28C9C5DA004327E9 /* OptionalDate+orCurrentDate.swift */; };
@@ -68,7 +67,6 @@
 		ECFAF64928C9C6DB004327E9 /* OptionalInt+orZero.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF63D28C9C5DA004327E9 /* OptionalInt+orZero.swift */; };
 		ECFAF64A28C9C6DB004327E9 /* Date+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF63828C9C598004327E9 /* Date+String.swift */; };
 		ECFAF64B28C9C6DB004327E9 /* OptionalString+OrEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF63E28C9C5DA004327E9 /* OptionalString+OrEmpty.swift */; };
-		ECFAF64C28C9C6DB004327E9 /* OptionalDouble+OrZero.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF63C28C9C5DA004327E9 /* OptionalDouble+OrZero.swift */; };
 		ECFAF65128C9CEE5004327E9 /* ChatBubbleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF65028C9CEE5004327E9 /* ChatBubbleViewModel.swift */; };
 		ECFAF65228C9CF09004327E9 /* ChatBubbleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF65028C9CEE5004327E9 /* ChatBubbleViewModel.swift */; };
 		ECFAF66228C9D990004327E9 /* ChatBubbleViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF65328C9D1D6004327E9 /* ChatBubbleViewModelTests.swift */; };
@@ -124,7 +122,6 @@
 		ECFAF63528C9C46B004327E9 /* ChatType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatType.swift; sourceTree = "<group>"; };
 		ECFAF63828C9C598004327E9 /* Date+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+String.swift"; sourceTree = "<group>"; };
 		ECFAF63A28C9C5BA004327E9 /* DateFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormat.swift; sourceTree = "<group>"; };
-		ECFAF63C28C9C5DA004327E9 /* OptionalDouble+OrZero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OptionalDouble+OrZero.swift"; sourceTree = "<group>"; };
 		ECFAF63D28C9C5DA004327E9 /* OptionalInt+orZero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OptionalInt+orZero.swift"; sourceTree = "<group>"; };
 		ECFAF63E28C9C5DA004327E9 /* OptionalString+OrEmpty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OptionalString+OrEmpty.swift"; sourceTree = "<group>"; };
 		ECFAF63F28C9C5DA004327E9 /* OptionalDate+orCurrentDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OptionalDate+orCurrentDate.swift"; sourceTree = "<group>"; };
@@ -454,7 +451,6 @@
 			isa = PBXGroup;
 			children = (
 				ECFAF63F28C9C5DA004327E9 /* OptionalDate+orCurrentDate.swift */,
-				ECFAF63C28C9C5DA004327E9 /* OptionalDouble+OrZero.swift */,
 				ECFAF63D28C9C5DA004327E9 /* OptionalInt+orZero.swift */,
 				ECFAF63E28C9C5DA004327E9 /* OptionalString+OrEmpty.swift */,
 			);
@@ -697,7 +693,6 @@
 				EC7D493B28CA525900C33208 /* ChatRepository.swift in Sources */,
 				EC7D493928CA4CE100C33208 /* ChatDefaultLocalDataSource.swift in Sources */,
 				ECFAF64228C9C5DA004327E9 /* OptionalString+OrEmpty.swift in Sources */,
-				ECFAF64028C9C5DA004327E9 /* OptionalDouble+OrZero.swift in Sources */,
 				EC7D493428CA49A000C33208 /* ChatDefaultRemoteDataSource.swift in Sources */,
 				EC7D492428CA3FBB00C33208 /* ErrorResponse.swift in Sources */,
 				EC7D490E28CA1D7D00C33208 /* MessageFieldView.swift in Sources */,
@@ -728,7 +723,6 @@
 				EC67681128C9AE3E00C72B58 /* LocalizationText.swift in Sources */,
 				ECFAF64928C9C6DB004327E9 /* OptionalInt+orZero.swift in Sources */,
 				ECFAF64828C9C6DB004327E9 /* OptionalDate+orCurrentDate.swift in Sources */,
-				ECFAF64C28C9C6DB004327E9 /* OptionalDouble+OrZero.swift in Sources */,
 				ECFAF65228C9CF09004327E9 /* ChatBubbleViewModel.swift in Sources */,
 				EC6767F728C9A0F600C72B58 /* Image+General.swift in Sources */,
 				EC6767FA28C9A10000C72B58 /* Color+General.swift in Sources */,
