@@ -17,3 +17,13 @@ public struct Chat: Codable {
 	let direction: String?
 	let message: String?
 }
+
+public struct MessageBody: Codable {
+	let message: String
+}
+
+public struct MessageResponse: Codable {
+	let id: String?
+	let message: String?
+	let createdAt: String?
+}

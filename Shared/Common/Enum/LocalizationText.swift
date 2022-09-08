@@ -25,6 +25,11 @@ enum LocalizationText {
 
 	static let generalError = NSLocalizedString(
 		"general_error",
-		comment: "This string is for error title"
+		comment: "This string for error title"
+	)
+
+	static let generalMessagePlaceholder = NSLocalizedString(
+		"general_message_placeholder",
+		comment: "This string for placeholder text on message textfield"
 	)
 }
