@@ -49,6 +49,8 @@
 		EC7D493428CA49A000C33208 /* ChatDefaultRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7D493328CA49A000C33208 /* ChatDefaultRemoteDataSource.swift */; };
 		EC7D493728CA4A6300C33208 /* ChatLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7D493628CA4A6300C33208 /* ChatLocalDataSource.swift */; };
 		EC7D493928CA4CE100C33208 /* ChatDefaultLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7D493828CA4CE100C33208 /* ChatDefaultLocalDataSource.swift */; };
+		EC7D493B28CA525900C33208 /* ChatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7D493A28CA525900C33208 /* ChatRepository.swift */; };
+		EC7D493D28CA526B00C33208 /* ChatDefaultRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7D493C28CA526B00C33208 /* ChatDefaultRepository.swift */; };
 		ECFAF63428C9C3BB004327E9 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF63328C9C3BB004327E9 /* Chat.swift */; };
 		ECFAF63628C9C46B004327E9 /* ChatType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF63528C9C46B004327E9 /* ChatType.swift */; };
 		ECFAF63928C9C598004327E9 /* Date+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF63828C9C598004327E9 /* Date+String.swift */; };
@@ -112,6 +114,8 @@
 		EC7D493328CA49A000C33208 /* ChatDefaultRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDefaultRemoteDataSource.swift; sourceTree = "<group>"; };
 		EC7D493628CA4A6300C33208 /* ChatLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLocalDataSource.swift; sourceTree = "<group>"; };
 		EC7D493828CA4CE100C33208 /* ChatDefaultLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDefaultLocalDataSource.swift; sourceTree = "<group>"; };
+		EC7D493A28CA525900C33208 /* ChatRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRepository.swift; sourceTree = "<group>"; };
+		EC7D493C28CA526B00C33208 /* ChatDefaultRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDefaultRepository.swift; sourceTree = "<group>"; };
 		ECFAF63328C9C3BB004327E9 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		ECFAF63528C9C46B004327E9 /* ChatType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatType.swift; sourceTree = "<group>"; };
 		ECFAF63828C9C598004327E9 /* Date+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+String.swift"; sourceTree = "<group>"; };
@@ -366,6 +370,8 @@
 			children = (
 				EC7D493528CA4A4F00C33208 /* Local */,
 				EC7D492A28CA46C500C33208 /* Remote */,
+				EC7D493A28CA525900C33208 /* ChatRepository.swift */,
+				EC7D493C28CA526B00C33208 /* ChatDefaultRepository.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -647,6 +653,7 @@
 				EC7D492228CA3EA200C33208 /* Moya+Request.swift in Sources */,
 				EC6767D328C99EFF00C72B58 /* MudahChat.xcdatamodeld in Sources */,
 				EC7D493728CA4A6300C33208 /* ChatLocalDataSource.swift in Sources */,
+				EC7D493D28CA526B00C33208 /* ChatDefaultRepository.swift in Sources */,
 				EC7D493228CA495900C33208 /* ChatRemoteDataSource.swift in Sources */,
 				EC7D491128CA232300C33208 /* MultilineTextField.swift in Sources */,
 				EC67681328C9AF0900C72B58 /* ChatBubble.swift in Sources */,
@@ -657,6 +664,7 @@
 				EC6767F628C9A0F600C72B58 /* Image+General.swift in Sources */,
 				ECFAF63428C9C3BB004327E9 /* Chat.swift in Sources */,
 				ECFAF65128C9CEE5004327E9 /* ChatBubbleViewModel.swift in Sources */,
+				EC7D493B28CA525900C33208 /* ChatRepository.swift in Sources */,
 				EC7D493928CA4CE100C33208 /* ChatDefaultLocalDataSource.swift in Sources */,
 				ECFAF64228C9C5DA004327E9 /* OptionalString+OrEmpty.swift in Sources */,
 				ECFAF64028C9C5DA004327E9 /* OptionalDouble+OrZero.swift in Sources */,
