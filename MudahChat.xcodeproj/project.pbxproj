@@ -39,6 +39,9 @@
 		EC7D491928CA359000C33208 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = EC7D491828CA359000C33208 /* Moya */; };
 		EC7D491B28CA359000C33208 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = EC7D491A28CA359000C33208 /* ReactiveMoya */; };
 		EC7D491D28CA359000C33208 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = EC7D491C28CA359000C33208 /* RxMoya */; };
+		EC7D492028CA3E0900C33208 /* Moya+defaultProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7D491F28CA3E0900C33208 /* Moya+defaultProvider.swift */; };
+		EC7D492228CA3EA200C33208 /* Moya+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7D492128CA3EA200C33208 /* Moya+Request.swift */; };
+		EC7D492428CA3FBB00C33208 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7D492328CA3FBB00C33208 /* ErrorResponse.swift */; };
 		ECFAF63428C9C3BB004327E9 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF63328C9C3BB004327E9 /* Chat.swift */; };
 		ECFAF63628C9C46B004327E9 /* ChatType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF63528C9C46B004327E9 /* ChatType.swift */; };
 		ECFAF63928C9C598004327E9 /* Date+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF63828C9C598004327E9 /* Date+String.swift */; };
@@ -92,6 +95,9 @@
 		EC67681228C9AF0900C72B58 /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
 		EC7D490D28CA1D7D00C33208 /* MessageFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageFieldView.swift; sourceTree = "<group>"; };
 		EC7D491028CA232300C33208 /* MultilineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilineTextField.swift; sourceTree = "<group>"; };
+		EC7D491F28CA3E0900C33208 /* Moya+defaultProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Moya+defaultProvider.swift"; sourceTree = "<group>"; };
+		EC7D492128CA3EA200C33208 /* Moya+Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Moya+Request.swift"; sourceTree = "<group>"; };
+		EC7D492328CA3FBB00C33208 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
 		ECFAF63328C9C3BB004327E9 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		ECFAF63528C9C46B004327E9 /* ChatType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatType.swift; sourceTree = "<group>"; };
 		ECFAF63828C9C598004327E9 /* Date+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+String.swift"; sourceTree = "<group>"; };
@@ -218,6 +224,7 @@
 		EC6767F228C9A0CD00C72B58 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				EC7D491E28CA3DCC00C33208 /* Moya */,
 				ECFAF64428C9C609004327E9 /* Date */,
 				ECFAF63728C9C563004327E9 /* Optional */,
 				EC6767F428C9A0E100C72B58 /* Image */,
@@ -312,10 +319,20 @@
 			path = MultilineTextField;
 			sourceTree = "<group>";
 		};
+		EC7D491E28CA3DCC00C33208 /* Moya */ = {
+			isa = PBXGroup;
+			children = (
+				EC7D491F28CA3E0900C33208 /* Moya+defaultProvider.swift */,
+				EC7D492128CA3EA200C33208 /* Moya+Request.swift */,
+			);
+			path = Moya;
+			sourceTree = "<group>";
+		};
 		ECFAF63228C9C3B0004327E9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				ECFAF63328C9C3BB004327E9 /* Chat.swift */,
+				EC7D492328CA3FBB00C33208 /* ErrorResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -550,6 +567,7 @@
 			files = (
 				ECFAF64128C9C5DA004327E9 /* OptionalInt+orZero.swift in Sources */,
 				ECFAF63928C9C598004327E9 /* Date+String.swift in Sources */,
+				EC7D492228CA3EA200C33208 /* Moya+Request.swift in Sources */,
 				EC6767D328C99EFF00C72B58 /* MudahChat.xcdatamodeld in Sources */,
 				EC7D491128CA232300C33208 /* MultilineTextField.swift in Sources */,
 				EC67681328C9AF0900C72B58 /* ChatBubble.swift in Sources */,
@@ -562,12 +580,14 @@
 				ECFAF65128C9CEE5004327E9 /* ChatBubbleViewModel.swift in Sources */,
 				ECFAF64228C9C5DA004327E9 /* OptionalString+OrEmpty.swift in Sources */,
 				ECFAF64028C9C5DA004327E9 /* OptionalDouble+OrZero.swift in Sources */,
+				EC7D492428CA3FBB00C33208 /* ErrorResponse.swift in Sources */,
 				EC7D490E28CA1D7D00C33208 /* MessageFieldView.swift in Sources */,
 				EC6767F928C9A10000C72B58 /* Color+General.swift in Sources */,
 				EC67680428C9A55C00C72B58 /* ChatRoomHeader.swift in Sources */,
 				EC6767D728C99EFF00C72B58 /* ChatRoomView.swift in Sources */,
 				EC67680028C9A38300C72B58 /* ChatRoomViewModel.swift in Sources */,
 				ECFAF64328C9C5DA004327E9 /* OptionalDate+orCurrentDate.swift in Sources */,
+				EC7D492028CA3E0900C33208 /* Moya+defaultProvider.swift in Sources */,
 				ECFAF63628C9C46B004327E9 /* ChatType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
