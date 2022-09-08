@@ -10,8 +10,10 @@ import SwiftUI
 struct ChatRoomView: View {
 
 	var body: some View {
-		VStack {
-
+		GeometryReader { geo in
+			VStack {
+				ChatRoomHeader(geo: geo)
+			}
 		}
 	}
 }
