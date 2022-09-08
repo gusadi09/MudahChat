@@ -9,6 +9,6 @@ import SwiftUI
 
 extension Image {
 	enum GeneralAssets {
-		
+		static let mudahImage = Image("mudah-image")
 	}
 }

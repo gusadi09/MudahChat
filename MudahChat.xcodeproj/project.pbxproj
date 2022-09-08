@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EC6767C428C99EFF00C72B58 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6767C328C99EFF00C72B58 /* Tests_iOS.swift */; };
-		EC6767C628C99EFF00C72B58 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6767C528C99EFF00C72B58 /* Tests_iOSLaunchTests.swift */; };
-		EC6767D028C99EFF00C72B58 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6767CF28C99EFF00C72B58 /* Tests_macOS.swift */; };
-		EC6767D228C99EFF00C72B58 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6767D128C99EFF00C72B58 /* Tests_macOSLaunchTests.swift */; };
 		EC6767D328C99EFF00C72B58 /* MudahChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EC6767A828C99EFB00C72B58 /* MudahChat.xcdatamodeld */; };
 		EC6767D428C99EFF00C72B58 /* MudahChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EC6767A828C99EFB00C72B58 /* MudahChat.xcdatamodeld */; };
 		EC6767D528C99EFF00C72B58 /* MudahChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6767AA28C99EFB00C72B58 /* MudahChatApp.swift */; };
@@ -29,22 +25,47 @@
 		EC6767FA28C9A10000C72B58 /* Color+General.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6767F828C9A10000C72B58 /* Color+General.swift */; };
 		EC67680028C9A38300C72B58 /* ChatRoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6767FF28C9A38300C72B58 /* ChatRoomViewModel.swift */; };
 		EC67680128C9A38300C72B58 /* ChatRoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6767FF28C9A38300C72B58 /* ChatRoomViewModel.swift */; };
+		EC67680428C9A55C00C72B58 /* ChatRoomHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC67680328C9A55C00C72B58 /* ChatRoomHeader.swift */; };
+		EC67680528C9A55C00C72B58 /* ChatRoomHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC67680328C9A55C00C72B58 /* ChatRoomHeader.swift */; };
+		EC67680A28C9AE0D00C72B58 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC67680D28C9AE0D00C72B58 /* Localizable.strings */; };
+		EC67680B28C9AE0D00C72B58 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC67680D28C9AE0D00C72B58 /* Localizable.strings */; };
+		EC67681028C9AE3E00C72B58 /* LocalizationText.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC67680F28C9AE3E00C72B58 /* LocalizationText.swift */; };
+		EC67681128C9AE3E00C72B58 /* LocalizationText.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC67680F28C9AE3E00C72B58 /* LocalizationText.swift */; };
+		EC67681328C9AF0900C72B58 /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC67681228C9AF0900C72B58 /* ChatBubble.swift */; };
+		EC67681428C9AF0900C72B58 /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC67681228C9AF0900C72B58 /* ChatBubble.swift */; };
+		EC7D490E28CA1D7D00C33208 /* MessageFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7D490D28CA1D7D00C33208 /* MessageFieldView.swift */; };
+		EC7D491128CA232300C33208 /* MultilineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7D491028CA232300C33208 /* MultilineTextField.swift */; };
+		ECFAF63428C9C3BB004327E9 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF63328C9C3BB004327E9 /* Chat.swift */; };
+		ECFAF63628C9C46B004327E9 /* ChatType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF63528C9C46B004327E9 /* ChatType.swift */; };
+		ECFAF63928C9C598004327E9 /* Date+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF63828C9C598004327E9 /* Date+String.swift */; };
+		ECFAF63B28C9C5BA004327E9 /* DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF63A28C9C5BA004327E9 /* DateFormat.swift */; };
+		ECFAF64028C9C5DA004327E9 /* OptionalDouble+OrZero.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF63C28C9C5DA004327E9 /* OptionalDouble+OrZero.swift */; };
+		ECFAF64128C9C5DA004327E9 /* OptionalInt+orZero.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF63D28C9C5DA004327E9 /* OptionalInt+orZero.swift */; };
+		ECFAF64228C9C5DA004327E9 /* OptionalString+OrEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF63E28C9C5DA004327E9 /* OptionalString+OrEmpty.swift */; };
+		ECFAF64328C9C5DA004327E9 /* OptionalDate+orCurrentDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF63F28C9C5DA004327E9 /* OptionalDate+orCurrentDate.swift */; };
+		ECFAF64528C9C6D0004327E9 /* DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF63A28C9C5BA004327E9 /* DateFormat.swift */; };
+		ECFAF64628C9C6D0004327E9 /* ChatType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF63528C9C46B004327E9 /* ChatType.swift */; };
+		ECFAF64728C9C6D4004327E9 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF63328C9C3BB004327E9 /* Chat.swift */; };
+		ECFAF64828C9C6DB004327E9 /* OptionalDate+orCurrentDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF63F28C9C5DA004327E9 /* OptionalDate+orCurrentDate.swift */; };
+		ECFAF64928C9C6DB004327E9 /* OptionalInt+orZero.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF63D28C9C5DA004327E9 /* OptionalInt+orZero.swift */; };
+		ECFAF64A28C9C6DB004327E9 /* Date+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF63828C9C598004327E9 /* Date+String.swift */; };
+		ECFAF64B28C9C6DB004327E9 /* OptionalString+OrEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF63E28C9C5DA004327E9 /* OptionalString+OrEmpty.swift */; };
+		ECFAF64C28C9C6DB004327E9 /* OptionalDouble+OrZero.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF63C28C9C5DA004327E9 /* OptionalDouble+OrZero.swift */; };
+		ECFAF65128C9CEE5004327E9 /* ChatBubbleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF65028C9CEE5004327E9 /* ChatBubbleViewModel.swift */; };
+		ECFAF65228C9CF09004327E9 /* ChatBubbleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF65028C9CEE5004327E9 /* ChatBubbleViewModel.swift */; };
+		ECFAF66228C9D990004327E9 /* ChatBubbleViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF65328C9D1D6004327E9 /* ChatBubbleViewModelTests.swift */; };
+		ECFAF66528C9F092004327E9 /* PreloadChat.json in Resources */ = {isa = PBXBuildFile; fileRef = ECFAF66428C9F092004327E9 /* PreloadChat.json */; };
+		ECFAF66628C9F092004327E9 /* PreloadChat.json in Resources */ = {isa = PBXBuildFile; fileRef = ECFAF66428C9F092004327E9 /* PreloadChat.json */; };
+		ECFAF66828C9FC92004327E9 /* ChatRoomViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF66728C9FC91004327E9 /* ChatRoomViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		EC6767C028C99EFF00C72B58 /* PBXContainerItemProxy */ = {
+		ECFAF65D28C9D97A004327E9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EC6767A328C99EFB00C72B58 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EC6767B128C99EFF00C72B58;
 			remoteInfo = "MudahChat (iOS)";
-		};
-		EC6767CC28C99EFF00C72B58 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EC6767A328C99EFB00C72B58 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EC6767B728C99EFF00C72B58;
-			remoteInfo = "MudahChat (macOS)";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -57,16 +78,29 @@
 		EC6767B228C99EFF00C72B58 /* MudahChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MudahChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6767B828C99EFF00C72B58 /* MudahChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MudahChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6767BA28C99EFF00C72B58 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		EC6767BF28C99EFF00C72B58 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC6767C328C99EFF00C72B58 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
-		EC6767C528C99EFF00C72B58 /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
-		EC6767CB28C99EFF00C72B58 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC6767CF28C99EFF00C72B58 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
-		EC6767D128C99EFF00C72B58 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		EC6767EF28C9A04E00C72B58 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
 		EC6767F528C9A0F600C72B58 /* Image+General.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+General.swift"; sourceTree = "<group>"; };
 		EC6767F828C9A10000C72B58 /* Color+General.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+General.swift"; sourceTree = "<group>"; };
 		EC6767FF28C9A38300C72B58 /* ChatRoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewModel.swift; sourceTree = "<group>"; };
+		EC67680328C9A55C00C72B58 /* ChatRoomHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomHeader.swift; sourceTree = "<group>"; };
+		EC67680C28C9AE0D00C72B58 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EC67680F28C9AE3E00C72B58 /* LocalizationText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationText.swift; sourceTree = "<group>"; };
+		EC67681228C9AF0900C72B58 /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
+		EC7D490D28CA1D7D00C33208 /* MessageFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageFieldView.swift; sourceTree = "<group>"; };
+		EC7D491028CA232300C33208 /* MultilineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilineTextField.swift; sourceTree = "<group>"; };
+		ECFAF63328C9C3BB004327E9 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		ECFAF63528C9C46B004327E9 /* ChatType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatType.swift; sourceTree = "<group>"; };
+		ECFAF63828C9C598004327E9 /* Date+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+String.swift"; sourceTree = "<group>"; };
+		ECFAF63A28C9C5BA004327E9 /* DateFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormat.swift; sourceTree = "<group>"; };
+		ECFAF63C28C9C5DA004327E9 /* OptionalDouble+OrZero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OptionalDouble+OrZero.swift"; sourceTree = "<group>"; };
+		ECFAF63D28C9C5DA004327E9 /* OptionalInt+orZero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OptionalInt+orZero.swift"; sourceTree = "<group>"; };
+		ECFAF63E28C9C5DA004327E9 /* OptionalString+OrEmpty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OptionalString+OrEmpty.swift"; sourceTree = "<group>"; };
+		ECFAF63F28C9C5DA004327E9 /* OptionalDate+orCurrentDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OptionalDate+orCurrentDate.swift"; sourceTree = "<group>"; };
+		ECFAF65028C9CEE5004327E9 /* ChatBubbleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubbleViewModel.swift; sourceTree = "<group>"; };
+		ECFAF65328C9D1D6004327E9 /* ChatBubbleViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubbleViewModelTests.swift; sourceTree = "<group>"; };
+		ECFAF65928C9D97A004327E9 /* MudahChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MudahChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECFAF66428C9F092004327E9 /* PreloadChat.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PreloadChat.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		ECFAF66728C9FC91004327E9 /* ChatRoomViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,14 +118,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC6767BC28C99EFF00C72B58 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EC6767C828C99EFF00C72B58 /* Frameworks */ = {
+		ECFAF65628C9D97A004327E9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -106,8 +133,7 @@
 			children = (
 				EC6767A728C99EFB00C72B58 /* Shared */,
 				EC6767B928C99EFF00C72B58 /* macOS */,
-				EC6767C228C99EFF00C72B58 /* Tests iOS */,
-				EC6767CE28C99EFF00C72B58 /* Tests macOS */,
+				ECFAF65A28C9D97A004327E9 /* MudahChatTests */,
 				EC6767B328C99EFF00C72B58 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -126,8 +152,7 @@
 			children = (
 				EC6767B228C99EFF00C72B58 /* MudahChat.app */,
 				EC6767B828C99EFF00C72B58 /* MudahChat.app */,
-				EC6767BF28C99EFF00C72B58 /* Tests iOS.xctest */,
-				EC6767CB28C99EFF00C72B58 /* Tests macOS.xctest */,
+				ECFAF65928C9D97A004327E9 /* MudahChatTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,27 +165,13 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
-		EC6767C228C99EFF00C72B58 /* Tests iOS */ = {
-			isa = PBXGroup;
-			children = (
-				EC6767C328C99EFF00C72B58 /* Tests_iOS.swift */,
-				EC6767C528C99EFF00C72B58 /* Tests_iOSLaunchTests.swift */,
-			);
-			path = "Tests iOS";
-			sourceTree = "<group>";
-		};
-		EC6767CE28C99EFF00C72B58 /* Tests macOS */ = {
-			isa = PBXGroup;
-			children = (
-				EC6767CF28C99EFF00C72B58 /* Tests_macOS.swift */,
-				EC6767D128C99EFF00C72B58 /* Tests_macOSLaunchTests.swift */,
-			);
-			path = "Tests macOS";
-			sourceTree = "<group>";
-		};
 		EC6767EB28C99FA200C72B58 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				ECFAF63228C9C3B0004327E9 /* Model */,
+				EC67680E28C9AE2D00C72B58 /* Enum */,
+				EC67680628C9ADF100C72B58 /* Localization */,
+				EC67680228C9A54800C72B58 /* Component */,
 				EC6767F228C9A0CD00C72B58 /* Extension */,
 				EC6767EE28C9A02000C72B58 /* Resource */,
 				EC6767ED28C99FB600C72B58 /* Persistence */,
@@ -191,6 +202,7 @@
 			children = (
 				EC6767AD28C99EFF00C72B58 /* Color.xcassets */,
 				EC6767EF28C9A04E00C72B58 /* Image.xcassets */,
+				ECFAF66428C9F092004327E9 /* PreloadChat.json */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -198,6 +210,8 @@
 		EC6767F228C9A0CD00C72B58 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				ECFAF64428C9C609004327E9 /* Date */,
+				ECFAF63728C9C563004327E9 /* Optional */,
 				EC6767F428C9A0E100C72B58 /* Image */,
 				EC6767F328C9A0D500C72B58 /* Color */,
 			);
@@ -253,6 +267,136 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		EC67680228C9A54800C72B58 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				EC7D490F28CA22ED00C33208 /* MultilineTextField */,
+				ECFAF66928CA1D03004327E9 /* MessageField */,
+				ECFAF66328C9EB15004327E9 /* ChatRoomHeader */,
+				ECFAF64D28C9CEB5004327E9 /* ChatBubble */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		EC67680628C9ADF100C72B58 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				EC67680D28C9AE0D00C72B58 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		EC67680E28C9AE2D00C72B58 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				ECFAF63A28C9C5BA004327E9 /* DateFormat.swift */,
+				EC67680F28C9AE3E00C72B58 /* LocalizationText.swift */,
+				ECFAF63528C9C46B004327E9 /* ChatType.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		EC7D490F28CA22ED00C33208 /* MultilineTextField */ = {
+			isa = PBXGroup;
+			children = (
+				EC7D491028CA232300C33208 /* MultilineTextField.swift */,
+			);
+			path = MultilineTextField;
+			sourceTree = "<group>";
+		};
+		ECFAF63228C9C3B0004327E9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ECFAF63328C9C3BB004327E9 /* Chat.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ECFAF63728C9C563004327E9 /* Optional */ = {
+			isa = PBXGroup;
+			children = (
+				ECFAF63F28C9C5DA004327E9 /* OptionalDate+orCurrentDate.swift */,
+				ECFAF63C28C9C5DA004327E9 /* OptionalDouble+OrZero.swift */,
+				ECFAF63D28C9C5DA004327E9 /* OptionalInt+orZero.swift */,
+				ECFAF63E28C9C5DA004327E9 /* OptionalString+OrEmpty.swift */,
+			);
+			path = Optional;
+			sourceTree = "<group>";
+		};
+		ECFAF64428C9C609004327E9 /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				ECFAF63828C9C598004327E9 /* Date+String.swift */,
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
+		ECFAF64D28C9CEB5004327E9 /* ChatBubble */ = {
+			isa = PBXGroup;
+			children = (
+				ECFAF64F28C9CECE004327E9 /* ViewModel */,
+				ECFAF64E28C9CEC6004327E9 /* View */,
+			);
+			path = ChatBubble;
+			sourceTree = "<group>";
+		};
+		ECFAF64E28C9CEC6004327E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC67681228C9AF0900C72B58 /* ChatBubble.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ECFAF64F28C9CECE004327E9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ECFAF65028C9CEE5004327E9 /* ChatBubbleViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ECFAF65A28C9D97A004327E9 /* MudahChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECFAF65328C9D1D6004327E9 /* ChatBubbleViewModelTests.swift */,
+				ECFAF66728C9FC91004327E9 /* ChatRoomViewModelTests.swift */,
+			);
+			path = MudahChatTests;
+			sourceTree = "<group>";
+		};
+		ECFAF66328C9EB15004327E9 /* ChatRoomHeader */ = {
+			isa = PBXGroup;
+			children = (
+				ECFAF66B28CA1D17004327E9 /* View */,
+			);
+			path = ChatRoomHeader;
+			sourceTree = "<group>";
+		};
+		ECFAF66928CA1D03004327E9 /* MessageField */ = {
+			isa = PBXGroup;
+			children = (
+				ECFAF66A28CA1D0D004327E9 /* View */,
+			);
+			path = MessageField;
+			sourceTree = "<group>";
+		};
+		ECFAF66A28CA1D0D004327E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC7D490D28CA1D7D00C33208 /* MessageFieldView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ECFAF66B28CA1D17004327E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC67680328C9A55C00C72B58 /* ChatRoomHeader.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -290,41 +434,23 @@
 			productReference = EC6767B828C99EFF00C72B58 /* MudahChat.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EC6767BE28C99EFF00C72B58 /* Tests iOS */ = {
+		ECFAF65828C9D97A004327E9 /* MudahChatTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EC6767E528C99EFF00C72B58 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildConfigurationList = ECFAF65F28C9D97A004327E9 /* Build configuration list for PBXNativeTarget "MudahChatTests" */;
 			buildPhases = (
-				EC6767BB28C99EFF00C72B58 /* Sources */,
-				EC6767BC28C99EFF00C72B58 /* Frameworks */,
-				EC6767BD28C99EFF00C72B58 /* Resources */,
+				ECFAF65528C9D97A004327E9 /* Sources */,
+				ECFAF65628C9D97A004327E9 /* Frameworks */,
+				ECFAF65728C9D97A004327E9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EC6767C128C99EFF00C72B58 /* PBXTargetDependency */,
+				ECFAF65E28C9D97A004327E9 /* PBXTargetDependency */,
 			);
-			name = "Tests iOS";
-			productName = "Tests iOS";
-			productReference = EC6767BF28C99EFF00C72B58 /* Tests iOS.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-		EC6767CA28C99EFF00C72B58 /* Tests macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EC6767E828C99EFF00C72B58 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
-			buildPhases = (
-				EC6767C728C99EFF00C72B58 /* Sources */,
-				EC6767C828C99EFF00C72B58 /* Frameworks */,
-				EC6767C928C99EFF00C72B58 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EC6767CD28C99EFF00C72B58 /* PBXTargetDependency */,
-			);
-			name = "Tests macOS";
-			productName = "Tests macOS";
-			productReference = EC6767CB28C99EFF00C72B58 /* Tests macOS.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
+			name = MudahChatTests;
+			productName = MudahChatTests;
+			productReference = ECFAF65928C9D97A004327E9 /* MudahChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -342,13 +468,9 @@
 					EC6767B728C99EFF00C72B58 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
-					EC6767BE28C99EFF00C72B58 = {
+					ECFAF65828C9D97A004327E9 = {
 						CreatedOnToolsVersion = 13.4.1;
 						TestTargetID = EC6767B128C99EFF00C72B58;
-					};
-					EC6767CA28C99EFF00C72B58 = {
-						CreatedOnToolsVersion = 13.4.1;
-						TestTargetID = EC6767B728C99EFF00C72B58;
 					};
 				};
 			};
@@ -367,8 +489,7 @@
 			targets = (
 				EC6767B128C99EFF00C72B58 /* MudahChat (iOS) */,
 				EC6767B728C99EFF00C72B58 /* MudahChat (macOS) */,
-				EC6767BE28C99EFF00C72B58 /* Tests iOS */,
-				EC6767CA28C99EFF00C72B58 /* Tests macOS */,
+				ECFAF65828C9D97A004327E9 /* MudahChatTests */,
 			);
 		};
 /* End PBXProject section */
@@ -379,6 +500,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC6767DB28C99EFF00C72B58 /* Color.xcassets in Resources */,
+				EC67680A28C9AE0D00C72B58 /* Localizable.strings in Resources */,
+				ECFAF66528C9F092004327E9 /* PreloadChat.json in Resources */,
 				EC6767F028C9A04E00C72B58 /* Image.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,18 +511,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC6767DC28C99EFF00C72B58 /* Color.xcassets in Resources */,
+				EC67680B28C9AE0D00C72B58 /* Localizable.strings in Resources */,
+				ECFAF66628C9F092004327E9 /* PreloadChat.json in Resources */,
 				EC6767F128C9A04E00C72B58 /* Image.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC6767BD28C99EFF00C72B58 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EC6767C928C99EFF00C72B58 /* Resources */ = {
+		ECFAF65728C9D97A004327E9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -413,13 +531,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECFAF64128C9C5DA004327E9 /* OptionalInt+orZero.swift in Sources */,
+				ECFAF63928C9C598004327E9 /* Date+String.swift in Sources */,
 				EC6767D328C99EFF00C72B58 /* MudahChat.xcdatamodeld in Sources */,
+				EC7D491128CA232300C33208 /* MultilineTextField.swift in Sources */,
+				EC67681328C9AF0900C72B58 /* ChatBubble.swift in Sources */,
 				EC6767D928C99EFF00C72B58 /* Persistence.swift in Sources */,
 				EC6767D528C99EFF00C72B58 /* MudahChatApp.swift in Sources */,
+				EC67681028C9AE3E00C72B58 /* LocalizationText.swift in Sources */,
+				ECFAF63B28C9C5BA004327E9 /* DateFormat.swift in Sources */,
 				EC6767F628C9A0F600C72B58 /* Image+General.swift in Sources */,
+				ECFAF63428C9C3BB004327E9 /* Chat.swift in Sources */,
+				ECFAF65128C9CEE5004327E9 /* ChatBubbleViewModel.swift in Sources */,
+				ECFAF64228C9C5DA004327E9 /* OptionalString+OrEmpty.swift in Sources */,
+				ECFAF64028C9C5DA004327E9 /* OptionalDouble+OrZero.swift in Sources */,
+				EC7D490E28CA1D7D00C33208 /* MessageFieldView.swift in Sources */,
 				EC6767F928C9A10000C72B58 /* Color+General.swift in Sources */,
+				EC67680428C9A55C00C72B58 /* ChatRoomHeader.swift in Sources */,
 				EC6767D728C99EFF00C72B58 /* ChatRoomView.swift in Sources */,
 				EC67680028C9A38300C72B58 /* ChatRoomViewModel.swift in Sources */,
+				ECFAF64328C9C5DA004327E9 /* OptionalDate+orCurrentDate.swift in Sources */,
+				ECFAF63628C9C46B004327E9 /* ChatType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,48 +559,57 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECFAF64728C9C6D4004327E9 /* Chat.swift in Sources */,
 				EC6767D428C99EFF00C72B58 /* MudahChat.xcdatamodeld in Sources */,
+				ECFAF64B28C9C6DB004327E9 /* OptionalString+OrEmpty.swift in Sources */,
+				EC67681428C9AF0900C72B58 /* ChatBubble.swift in Sources */,
 				EC6767DA28C99EFF00C72B58 /* Persistence.swift in Sources */,
 				EC6767D628C99EFF00C72B58 /* MudahChatApp.swift in Sources */,
+				EC67681128C9AE3E00C72B58 /* LocalizationText.swift in Sources */,
+				ECFAF64928C9C6DB004327E9 /* OptionalInt+orZero.swift in Sources */,
+				ECFAF64828C9C6DB004327E9 /* OptionalDate+orCurrentDate.swift in Sources */,
+				ECFAF64C28C9C6DB004327E9 /* OptionalDouble+OrZero.swift in Sources */,
+				ECFAF65228C9CF09004327E9 /* ChatBubbleViewModel.swift in Sources */,
 				EC6767F728C9A0F600C72B58 /* Image+General.swift in Sources */,
 				EC6767FA28C9A10000C72B58 /* Color+General.swift in Sources */,
+				EC67680528C9A55C00C72B58 /* ChatRoomHeader.swift in Sources */,
 				EC6767D828C99EFF00C72B58 /* ChatRoomView.swift in Sources */,
+				ECFAF64A28C9C6DB004327E9 /* Date+String.swift in Sources */,
+				ECFAF64528C9C6D0004327E9 /* DateFormat.swift in Sources */,
 				EC67680128C9A38300C72B58 /* ChatRoomViewModel.swift in Sources */,
+				ECFAF64628C9C6D0004327E9 /* ChatType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC6767BB28C99EFF00C72B58 /* Sources */ = {
+		ECFAF65528C9D97A004327E9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC6767C628C99EFF00C72B58 /* Tests_iOSLaunchTests.swift in Sources */,
-				EC6767C428C99EFF00C72B58 /* Tests_iOS.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EC6767C728C99EFF00C72B58 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EC6767D228C99EFF00C72B58 /* Tests_macOSLaunchTests.swift in Sources */,
-				EC6767D028C99EFF00C72B58 /* Tests_macOS.swift in Sources */,
+				ECFAF66228C9D990004327E9 /* ChatBubbleViewModelTests.swift in Sources */,
+				ECFAF66828C9FC92004327E9 /* ChatRoomViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		EC6767C128C99EFF00C72B58 /* PBXTargetDependency */ = {
+		ECFAF65E28C9D97A004327E9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = EC6767B128C99EFF00C72B58 /* MudahChat (iOS) */;
-			targetProxy = EC6767C028C99EFF00C72B58 /* PBXContainerItemProxy */;
-		};
-		EC6767CD28C99EFF00C72B58 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EC6767B728C99EFF00C72B58 /* MudahChat (macOS) */;
-			targetProxy = EC6767CC28C99EFF00C72B58 /* PBXContainerItemProxy */;
+			targetProxy = ECFAF65D28C9D97A004327E9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC67680D28C9AE0D00C72B58 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC67680C28C9AE0D00C72B58 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		EC6767DD28C99EFF00C72B58 /* Debug */ = {
@@ -697,82 +838,44 @@
 			};
 			name = Release;
 		};
-		EC6767E628C99EFF00C72B58 /* Debug */ = {
+		ECFAF66028C9D97A004327E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6M5M727687;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.challenge.Tests-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.challenge.MudahChatTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "MudahChat (iOS)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MudahChat.app/MudahChat";
 			};
 			name = Debug;
 		};
-		EC6767E728C99EFF00C72B58 /* Release */ = {
+		ECFAF66128C9D97A004327E9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6M5M727687;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.challenge.Tests-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.challenge.MudahChatTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "MudahChat (iOS)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MudahChat.app/MudahChat";
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		EC6767E928C99EFF00C72B58 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6M5M727687;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.challenge.Tests-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "MudahChat (macOS)";
-			};
-			name = Debug;
-		};
-		EC6767EA28C99EFF00C72B58 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6M5M727687;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.challenge.Tests-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "MudahChat (macOS)";
 			};
 			name = Release;
 		};
@@ -806,20 +909,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EC6767E528C99EFF00C72B58 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+		ECFAF65F28C9D97A004327E9 /* Build configuration list for PBXNativeTarget "MudahChatTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EC6767E628C99EFF00C72B58 /* Debug */,
-				EC6767E728C99EFF00C72B58 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EC6767E828C99EFF00C72B58 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EC6767E928C99EFF00C72B58 /* Debug */,
-				EC6767EA28C99EFF00C72B58 /* Release */,
+				ECFAF66028C9D97A004327E9 /* Debug */,
+				ECFAF66128C9D97A004327E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
