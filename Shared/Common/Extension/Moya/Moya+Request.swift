@@ -24,7 +24,7 @@ extension MoyaProvider {
 				jsonDecoder.dateDecodingStrategy = .formatted(dateFormatter)
 
 				do {
-					if errorCode == 200 {
+					if errorCode >= 200 && errorCode < 300 {
 						let model = try jsonDecoder.decode(model.self, from: response.data)
 						return Just(model).setFailureType(to: ErrorResponse.self).eraseToAnyPublisher()
 					} else {

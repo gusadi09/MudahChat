@@ -9,23 +9,23 @@ import Foundation
 import SwiftUI
 
 final class ChatBubbleViewModel: ObservableObject {
-	func isOutgoing(_ chat: Chat) -> Bool {
+	func isOutgoing(_ chat: Message) -> Bool {
 		chat.direction == ChatType.outgoing
 	}
-
-	func isIncoming(_ chat: Chat) -> Bool {
+	
+	func isIncoming(_ chat: Message) -> Bool {
 		chat.direction == ChatType.incoming
 	}
-
-	func textChatAlignment(_ chat: Chat) -> TextAlignment {
+	
+	func textChatAlignment(_ chat: Message) -> TextAlignment {
 		isOutgoing(chat) ? .trailing : .leading
 	}
-
-	func chatBubbleColor(_ chat: Chat) -> Color {
+	
+	func chatBubbleColor(_ chat: Message) -> Color {
 		isOutgoing(chat) ? .GeneralTheme.primaryRed : .gray.opacity(0.3)
 	}
-
-	func formattedTimestamp(_ chat: Chat) -> String {
+	
+	func formattedTimestamp(_ chat: Message) -> String {
 		chat.timestamp.orCurrentDate().toString(format: .ddMMyyyyHHmm)
 	}
 }
