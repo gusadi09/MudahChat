@@ -57,6 +57,7 @@
 		ECFAF66228C9D990004327E9 /* ChatBubbleViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF65328C9D1D6004327E9 /* ChatBubbleViewModelTests.swift */; };
 		ECFAF66528C9F092004327E9 /* PreloadChat.json in Resources */ = {isa = PBXBuildFile; fileRef = ECFAF66428C9F092004327E9 /* PreloadChat.json */; };
 		ECFAF66628C9F092004327E9 /* PreloadChat.json in Resources */ = {isa = PBXBuildFile; fileRef = ECFAF66428C9F092004327E9 /* PreloadChat.json */; };
+		ECFAF66828C9FC92004327E9 /* ChatRoomViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF66728C9FC91004327E9 /* ChatRoomViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +118,7 @@
 		ECFAF65328C9D1D6004327E9 /* ChatBubbleViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubbleViewModelTests.swift; sourceTree = "<group>"; };
 		ECFAF65928C9D97A004327E9 /* MudahChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MudahChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECFAF66428C9F092004327E9 /* PreloadChat.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PreloadChat.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		ECFAF66728C9FC91004327E9 /* ChatRoomViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -401,6 +403,7 @@
 			isa = PBXGroup;
 			children = (
 				ECFAF65328C9D1D6004327E9 /* ChatBubbleViewModelTests.swift */,
+				ECFAF66728C9FC91004327E9 /* ChatRoomViewModelTests.swift */,
 			);
 			path = MudahChatTests;
 			sourceTree = "<group>";
@@ -677,6 +680,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECFAF66228C9D990004327E9 /* ChatBubbleViewModelTests.swift in Sources */,
+				ECFAF66828C9FC92004327E9 /* ChatRoomViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

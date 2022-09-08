@@ -23,7 +23,7 @@ class ChatBubbleViewModelTests: XCTestCase {
 	}
 
 	func test_dateStringFormated() {
-		XCTAssertEqual(Date().toString(format: .HHmm), sut.formattedTimestamp(dummyChat))
+		XCTAssertEqual(Date().toString(format: .ddMMyyyyHHmm), sut.formattedTimestamp(dummyChat))
 	}
 
 	func test_textChatAlignment() {
