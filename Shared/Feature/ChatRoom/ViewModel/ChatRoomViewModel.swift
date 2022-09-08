@@ -5,16 +5,25 @@
 //  Created by Gus Adi on 08/09/22.
 //
 
+import Combine
 import Foundation
 
 final class ChatRoomViewModel: ObservableObject {
-
+	
+	private let chatRepository: ChatRepository
+	private var cancellables = Set<AnyCancellable>()
+	
 	@Published var isLoading = false
 	@Published var isError = false
 	@Published var error = ""
 	@Published var chatArray = [Chat]()
+	@Published var localChatHistory = [Message]()
 	@Published var chatMessage = MessageBody(message: "")
-
+	
+	init(chatRepository: ChatRepository = ChatDefaultRepository()) {
+		self.chatRepository = chatRepository
+	}
+	
 	func loadJSONChat() {
 		isError = false
 		error = ""
@@ -28,7 +37,7 @@ final class ChatRoomViewModel: ObservableObject {
 			self.error = LocalizationText.chatRoomJsonNotFound
 			return
 		}
-
+		
 		do {
 			let data = try Data(contentsOf: url)
 			let object = try decoder.decode(ChatResponse.self, from: data)
@@ -39,8 +48,98 @@ final class ChatRoomViewModel: ObservableObject {
 			self.error = LocalizationText.chatRoomFailedToLoadJson
 		}
 	}
-
-	func sortedChat() -> [Chat] {
-		chatArray.sorted(by: { $0.timestamp.orCurrentDate() < $1.timestamp.orCurrentDate() })
+	
+	func sortedChat() -> [Message] {
+		localChatHistory.sorted(by: { $0.timestamp.orCurrentDate() < $1.timestamp.orCurrentDate() })
+	}
+	
+	func startRequest() {
+		self.isLoading = true
+		self.isError = false
+		self.error = ""
+	}
+	
+	func sendMessage() {
+		startRequest()
+		
+		chatRepository.provideSendMessage(by: chatMessage)
+			.sink { result in
+				switch result {
+				case .failure(let error):
+					self.isError = true
+					self.isLoading = false
+					self.error = error.error.orEmpty()
+					
+				case .finished:
+					self.isLoading = false
+					
+				}
+			} receiveValue: { response in
+				let chat = Chat(
+					timestamp: response.createdAt,
+					direction: ChatType.outgoing,
+					message: response.message
+				)
+				
+				self.chatArray.append(chat)
+				self.saveToLocalChat(chat)
+				self.chatMessage.message = ""
+				self.loadLocalChat()
+			}
+			.store(in: &cancellables)
+		
+	}
+	
+	func saveToLocalChat(_ chat: Chat) {
+		isError = false
+		error = ""
+		
+		do {
+			try self.chatRepository.provideSaveChatToLocal(chat)
+		} catch {
+			self.isError = true
+			self.isLoading = false
+			self.error = error.localizedDescription
+		}
+	}
+	
+	func loadLocalChat() {
+		isError = false
+		error = ""
+		
+		do {
+			self.localChatHistory = try self.chatRepository.provideLoadLocalChat()
+		} catch {
+			self.isError = true
+			self.isLoading = false
+			self.error = error.localizedDescription
+		}
+	}
+	
+	func deleteAllChat() {
+		isError = false
+		error = ""
+		
+		do {
+			try self.chatRepository.provideDeleteAllChatOnLocal()
+		} catch {
+			self.isError = true
+			self.isLoading = false
+			self.error = error.localizedDescription
+		}
+	}
+	
+	func onChatRoomAppear() {
+		loadLocalChat()
+		
+		if localChatHistory.isEmpty {
+			loadJSONChat()
+			
+			for item in chatArray {
+				saveToLocalChat(item)
+			}
+			
+			loadLocalChat()
+		}
 	}
 }

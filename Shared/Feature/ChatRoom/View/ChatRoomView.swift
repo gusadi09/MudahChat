@@ -24,25 +24,35 @@ struct ChatRoomView: View {
 					}
 
 				ScrollViewReader { scroll in
-					ScrollView(.vertical, showsIndicators: true) {
-						LazyVStack {
-							ForEach(viewModel.sortedChat(), id: \.id) { data in
-								ChatBubble(chat: data)
-									.id(data.id)
+					VStack(spacing: 0) {
+						ScrollView(.vertical, showsIndicators: true) {
+							LazyVStack {
+								ForEach(viewModel.sortedChat(), id: \.id) { data in
+									ChatBubble(chat: data)
+										.id(data.id)
+								}
+							}
+							.padding(.horizontal, 10)
+							.padding(.vertical)
+						}
+						.onChange(of: viewModel.sortedChat().last) { newValue in
+							withAnimation {
+								scroll.scrollTo(newValue?.id ?? UUID(), anchor: .bottom)
 							}
 						}
-						.padding(.horizontal, 10)
-						.padding(.vertical)
+
+						MessageFieldView(
+							message: $viewModel.chatMessage.message,
+							isLoading: $viewModel.isLoading
+						) {
+							viewModel.sendMessage()
+						}
 					}
 				}
-
-				MessageFieldView(
-					message: $viewModel.chatMessage.message,
-					isLoading: $viewModel.isLoading
-				)
+				
 			}
 			.onAppear {
-				viewModel.loadJSONChat()
+				viewModel.onChatRoomAppear()
 			}
 		}
 	}
