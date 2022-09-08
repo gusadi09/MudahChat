@@ -16,11 +16,18 @@ struct ChatRoomHeader: View {
 			Image.GeneralAssets.mudahImage
 				.resizable()
 				.scaledToFit()
-				.frame(height: geo.size.height/12)
+				.frame(
+					height: geo.size.height/15
+				)
 				.clipShape(Circle())
 
 			Text(LocalizationText.chatRoomHeaderTitle)
-				.font(.system(size: 14, weight: .semibold))
+				.font(
+					.system(
+						size: geo.size.height/45,
+						weight: .semibold
+					)
+				)
 				.foregroundColor(.white)
 
 			Spacer()
