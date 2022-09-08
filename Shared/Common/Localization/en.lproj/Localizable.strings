@@ -7,3 +7,6 @@
 */
 
 "chat_room_header_title" = "Mudah Assistant";
+"chat_room_file_not_found_error" = "Can't found json file";
+"chat_room_failed_to_load" = "Failed to load the json data";
+"general_error" = "Error!";

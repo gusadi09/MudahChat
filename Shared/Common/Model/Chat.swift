@@ -12,6 +12,7 @@ public struct ChatResponse: Codable {
 }
 
 public struct Chat: Codable {
+	let id = UUID()
 	let timestamp: Date?
 	let direction: String?
 	let message: String?

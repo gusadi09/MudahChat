@@ -26,6 +26,6 @@ final class ChatBubbleViewModel: ObservableObject {
 	}
 
 	func formattedTimestamp(_ chat: Chat) -> String {
-		chat.timestamp.orCurrentDate().toString(format: .HHmm)
+		chat.timestamp.orCurrentDate().toString(format: .ddMMyyyyHHmm)
 	}
 }

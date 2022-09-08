@@ -55,6 +55,8 @@
 		ECFAF65128C9CEE5004327E9 /* ChatBubbleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF65028C9CEE5004327E9 /* ChatBubbleViewModel.swift */; };
 		ECFAF65228C9CF09004327E9 /* ChatBubbleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF65028C9CEE5004327E9 /* ChatBubbleViewModel.swift */; };
 		ECFAF66228C9D990004327E9 /* ChatBubbleViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF65328C9D1D6004327E9 /* ChatBubbleViewModelTests.swift */; };
+		ECFAF66528C9F092004327E9 /* PreloadChat.json in Resources */ = {isa = PBXBuildFile; fileRef = ECFAF66428C9F092004327E9 /* PreloadChat.json */; };
+		ECFAF66628C9F092004327E9 /* PreloadChat.json in Resources */ = {isa = PBXBuildFile; fileRef = ECFAF66428C9F092004327E9 /* PreloadChat.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +116,7 @@
 		ECFAF65028C9CEE5004327E9 /* ChatBubbleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubbleViewModel.swift; sourceTree = "<group>"; };
 		ECFAF65328C9D1D6004327E9 /* ChatBubbleViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubbleViewModelTests.swift; sourceTree = "<group>"; };
 		ECFAF65928C9D97A004327E9 /* MudahChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MudahChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECFAF66428C9F092004327E9 /* PreloadChat.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PreloadChat.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +253,7 @@
 			children = (
 				EC6767AD28C99EFF00C72B58 /* Color.xcassets */,
 				EC6767EF28C9A04E00C72B58 /* Image.xcassets */,
+				ECFAF66428C9F092004327E9 /* PreloadChat.json */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -559,6 +563,7 @@
 			files = (
 				EC6767DB28C99EFF00C72B58 /* Color.xcassets in Resources */,
 				EC67680A28C9AE0D00C72B58 /* Localizable.strings in Resources */,
+				ECFAF66528C9F092004327E9 /* PreloadChat.json in Resources */,
 				EC6767F028C9A04E00C72B58 /* Image.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -569,6 +574,7 @@
 			files = (
 				EC6767DC28C99EFF00C72B58 /* Color.xcassets in Resources */,
 				EC67680B28C9AE0D00C72B58 /* Localizable.strings in Resources */,
+				ECFAF66628C9F092004327E9 /* PreloadChat.json in Resources */,
 				EC6767F128C9A04E00C72B58 /* Image.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
