@@ -36,7 +36,10 @@ struct ChatRoomView: View {
 					}
 				}
 
-				MessageFieldView(message: $viewModel.chatMessage.message)
+				MessageFieldView(
+					message: $viewModel.chatMessage.message,
+					isLoading: $viewModel.isLoading
+				)
 			}
 			.onAppear {
 				viewModel.loadJSONChat()

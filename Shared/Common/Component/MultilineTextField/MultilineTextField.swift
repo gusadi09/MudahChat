@@ -23,6 +23,7 @@ private struct UITextViewWrapper: UIViewRepresentable {
 
 		textField.isEditable = true
 		textField.isSelectable = true
+		textField.textColor = .black
 		textField.font = UIFont.systemFont(ofSize: 12)
 		textField.isUserInteractionEnabled = true
 		textField.isScrollEnabled = true
