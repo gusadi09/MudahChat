@@ -35,6 +35,8 @@ struct ChatRoomView: View {
 						.padding(.vertical)
 					}
 				}
+
+				MessageFieldView(message: $viewModel.chatMessage.message)
 			}
 			.onAppear {
 				viewModel.loadJSONChat()

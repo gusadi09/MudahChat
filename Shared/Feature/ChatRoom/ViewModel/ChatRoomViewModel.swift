@@ -13,6 +13,7 @@ final class ChatRoomViewModel: ObservableObject {
 	@Published var isError = false
 	@Published var error = ""
 	@Published var chatArray = [Chat]()
+	@Published var chatMessage = MessageBody(message: "")
 
 	func loadJSONChat() {
 		isError = false

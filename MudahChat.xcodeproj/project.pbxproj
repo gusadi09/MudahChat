@@ -33,6 +33,8 @@
 		EC67681128C9AE3E00C72B58 /* LocalizationText.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC67680F28C9AE3E00C72B58 /* LocalizationText.swift */; };
 		EC67681328C9AF0900C72B58 /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC67681228C9AF0900C72B58 /* ChatBubble.swift */; };
 		EC67681428C9AF0900C72B58 /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC67681228C9AF0900C72B58 /* ChatBubble.swift */; };
+		EC7D490E28CA1D7D00C33208 /* MessageFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7D490D28CA1D7D00C33208 /* MessageFieldView.swift */; };
+		EC7D491128CA232300C33208 /* MultilineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7D491028CA232300C33208 /* MultilineTextField.swift */; };
 		ECFAF63428C9C3BB004327E9 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF63328C9C3BB004327E9 /* Chat.swift */; };
 		ECFAF63628C9C46B004327E9 /* ChatType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF63528C9C46B004327E9 /* ChatType.swift */; };
 		ECFAF63928C9C598004327E9 /* Date+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF63828C9C598004327E9 /* Date+String.swift */; };
@@ -84,6 +86,8 @@
 		EC67680C28C9AE0D00C72B58 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EC67680F28C9AE3E00C72B58 /* LocalizationText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationText.swift; sourceTree = "<group>"; };
 		EC67681228C9AF0900C72B58 /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
+		EC7D490D28CA1D7D00C33208 /* MessageFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageFieldView.swift; sourceTree = "<group>"; };
+		EC7D491028CA232300C33208 /* MultilineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilineTextField.swift; sourceTree = "<group>"; };
 		ECFAF63328C9C3BB004327E9 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		ECFAF63528C9C46B004327E9 /* ChatType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatType.swift; sourceTree = "<group>"; };
 		ECFAF63828C9C598004327E9 /* Date+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+String.swift"; sourceTree = "<group>"; };
@@ -266,6 +270,8 @@
 		EC67680228C9A54800C72B58 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				EC7D490F28CA22ED00C33208 /* MultilineTextField */,
+				ECFAF66928CA1D03004327E9 /* MessageField */,
 				ECFAF66328C9EB15004327E9 /* ChatRoomHeader */,
 				ECFAF64D28C9CEB5004327E9 /* ChatBubble */,
 			);
@@ -288,6 +294,14 @@
 				ECFAF63528C9C46B004327E9 /* ChatType.swift */,
 			);
 			path = Enum;
+			sourceTree = "<group>";
+		};
+		EC7D490F28CA22ED00C33208 /* MultilineTextField */ = {
+			isa = PBXGroup;
+			children = (
+				EC7D491028CA232300C33208 /* MultilineTextField.swift */,
+			);
+			path = MultilineTextField;
 			sourceTree = "<group>";
 		};
 		ECFAF63228C9C3B0004327E9 /* Model */ = {
@@ -354,9 +368,33 @@
 		ECFAF66328C9EB15004327E9 /* ChatRoomHeader */ = {
 			isa = PBXGroup;
 			children = (
-				EC67680328C9A55C00C72B58 /* ChatRoomHeader.swift */,
+				ECFAF66B28CA1D17004327E9 /* View */,
 			);
 			path = ChatRoomHeader;
+			sourceTree = "<group>";
+		};
+		ECFAF66928CA1D03004327E9 /* MessageField */ = {
+			isa = PBXGroup;
+			children = (
+				ECFAF66A28CA1D0D004327E9 /* View */,
+			);
+			path = MessageField;
+			sourceTree = "<group>";
+		};
+		ECFAF66A28CA1D0D004327E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC7D490D28CA1D7D00C33208 /* MessageFieldView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ECFAF66B28CA1D17004327E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC67680328C9A55C00C72B58 /* ChatRoomHeader.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -496,6 +534,7 @@
 				ECFAF64128C9C5DA004327E9 /* OptionalInt+orZero.swift in Sources */,
 				ECFAF63928C9C598004327E9 /* Date+String.swift in Sources */,
 				EC6767D328C99EFF00C72B58 /* MudahChat.xcdatamodeld in Sources */,
+				EC7D491128CA232300C33208 /* MultilineTextField.swift in Sources */,
 				EC67681328C9AF0900C72B58 /* ChatBubble.swift in Sources */,
 				EC6767D928C99EFF00C72B58 /* Persistence.swift in Sources */,
 				EC6767D528C99EFF00C72B58 /* MudahChatApp.swift in Sources */,
@@ -506,6 +545,7 @@
 				ECFAF65128C9CEE5004327E9 /* ChatBubbleViewModel.swift in Sources */,
 				ECFAF64228C9C5DA004327E9 /* OptionalString+OrEmpty.swift in Sources */,
 				ECFAF64028C9C5DA004327E9 /* OptionalDouble+OrZero.swift in Sources */,
+				EC7D490E28CA1D7D00C33208 /* MessageFieldView.swift in Sources */,
 				EC6767F928C9A10000C72B58 /* Color+General.swift in Sources */,
 				EC67680428C9A55C00C72B58 /* ChatRoomHeader.swift in Sources */,
 				EC6767D728C99EFF00C72B58 /* ChatRoomView.swift in Sources */,

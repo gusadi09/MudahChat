@@ -19,7 +19,7 @@ public struct Chat: Codable {
 }
 
 public struct MessageBody: Codable {
-	let message: String
+	var message: String
 }
 
 public struct MessageResponse: Codable {

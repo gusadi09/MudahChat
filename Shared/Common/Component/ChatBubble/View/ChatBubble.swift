@@ -22,6 +22,7 @@ struct ChatBubble: View {
 
 			VStack(alignment: viewModel.isOutgoing(chat) ? .trailing : .leading) {
 				Text(chat.message.orEmpty())
+					.font(.system(size: 12))
 					.multilineTextAlignment(viewModel.textChatAlignment(chat))
 					.padding()
 					.background(
