@@ -9,30 +9,32 @@ import SwiftUI
 
 struct ChatBubble: View {
 
+	@ObservedObject var viewModel = ChatBubbleViewModel()
+
 	let chat: Chat
 
 	var body: some View {
 		HStack {
 
-			if chat.direction == ChatType.outgoing {
+			if viewModel.isOutgoing(chat) {
 				Spacer()
 			}
 
-			VStack(alignment: chat.direction == ChatType.outgoing ? .trailing : .leading) {
+			VStack(alignment: viewModel.isOutgoing(chat) ? .trailing : .leading) {
 				Text(chat.message.orEmpty())
-					.multilineTextAlignment(chat.direction.orEmpty() == ChatType.outgoing ? .trailing : .leading)
+					.multilineTextAlignment(viewModel.textChatAlignment(chat))
 					.padding()
 					.background(
 						RoundedRectangle(cornerRadius: 12)
-							.foregroundColor(chat.direction.orEmpty() == ChatType.outgoing ? .GeneralTheme.primaryRed : .gray.opacity(0.3))
+							.foregroundColor(viewModel.chatBubbleColor(chat))
 					)
 
-				Text(chat.timestamp.orCurrentDate().toString(format: .HHmm))
+				Text(viewModel.formattedTimestamp(chat))
 					.font(.system(size: 10))
 					.opacity(0.5)
 			}
 
-			if chat.direction.orEmpty() == ChatType.incoming {
+			if viewModel.isIncoming(chat) {
 				Spacer()
 			}
 		}
