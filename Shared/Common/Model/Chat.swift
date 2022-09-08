@@ -26,4 +26,12 @@ public struct MessageResponse: Codable {
 	let id: String?
 	let message: String?
 	let createdAt: String?
+
+	static func == (lhs: MessageResponse, rhs: MessageResponse) -> Bool {
+		return lhs.id.orEmpty() == rhs.id.orEmpty()
+	}
+
+	func hash(into hasher: inout Hasher) {
+		hasher.combine(id.orEmpty())
+	}
 }
