@@ -35,6 +35,10 @@
 		EC67681428C9AF0900C72B58 /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC67681228C9AF0900C72B58 /* ChatBubble.swift */; };
 		EC7D490E28CA1D7D00C33208 /* MessageFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7D490D28CA1D7D00C33208 /* MessageFieldView.swift */; };
 		EC7D491128CA232300C33208 /* MultilineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7D491028CA232300C33208 /* MultilineTextField.swift */; };
+		EC7D491728CA359000C33208 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = EC7D491628CA359000C33208 /* CombineMoya */; };
+		EC7D491928CA359000C33208 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = EC7D491828CA359000C33208 /* Moya */; };
+		EC7D491B28CA359000C33208 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = EC7D491A28CA359000C33208 /* ReactiveMoya */; };
+		EC7D491D28CA359000C33208 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = EC7D491C28CA359000C33208 /* RxMoya */; };
 		ECFAF63428C9C3BB004327E9 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF63328C9C3BB004327E9 /* Chat.swift */; };
 		ECFAF63628C9C46B004327E9 /* ChatType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF63528C9C46B004327E9 /* ChatType.swift */; };
 		ECFAF63928C9C598004327E9 /* Date+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF63828C9C598004327E9 /* Date+String.swift */; };
@@ -108,6 +112,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC7D491928CA359000C33208 /* Moya in Frameworks */,
+				EC7D491728CA359000C33208 /* CombineMoya in Frameworks */,
+				EC7D491D28CA359000C33208 /* RxMoya in Frameworks */,
+				EC7D491B28CA359000C33208 /* ReactiveMoya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +421,12 @@
 			dependencies = (
 			);
 			name = "MudahChat (iOS)";
+			packageProductDependencies = (
+				EC7D491628CA359000C33208 /* CombineMoya */,
+				EC7D491828CA359000C33208 /* Moya */,
+				EC7D491A28CA359000C33208 /* ReactiveMoya */,
+				EC7D491C28CA359000C33208 /* RxMoya */,
+			);
 			productName = "MudahChat (iOS)";
 			productReference = EC6767B228C99EFF00C72B58 /* MudahChat.app */;
 			productType = "com.apple.product-type.application";
@@ -483,6 +497,9 @@
 				Base,
 			);
 			mainGroup = EC6767A228C99EFB00C72B58;
+			packageReferences = (
+				EC7D491528CA359000C33208 /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			productRefGroup = EC6767B328C99EFF00C72B58 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -919,6 +936,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EC7D491528CA359000C33208 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EC7D491628CA359000C33208 /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC7D491528CA359000C33208 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		EC7D491828CA359000C33208 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC7D491528CA359000C33208 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		EC7D491A28CA359000C33208 /* ReactiveMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC7D491528CA359000C33208 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = ReactiveMoya;
+		};
+		EC7D491C28CA359000C33208 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC7D491528CA359000C33208 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		EC6767A828C99EFB00C72B58 /* MudahChat.xcdatamodeld */ = {
