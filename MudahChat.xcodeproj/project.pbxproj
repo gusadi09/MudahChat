@@ -15,12 +15,20 @@
 		EC6767D428C99EFF00C72B58 /* MudahChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EC6767A828C99EFB00C72B58 /* MudahChat.xcdatamodeld */; };
 		EC6767D528C99EFF00C72B58 /* MudahChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6767AA28C99EFB00C72B58 /* MudahChatApp.swift */; };
 		EC6767D628C99EFF00C72B58 /* MudahChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6767AA28C99EFB00C72B58 /* MudahChatApp.swift */; };
-		EC6767D728C99EFF00C72B58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6767AB28C99EFB00C72B58 /* ContentView.swift */; };
-		EC6767D828C99EFF00C72B58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6767AB28C99EFB00C72B58 /* ContentView.swift */; };
+		EC6767D728C99EFF00C72B58 /* ChatRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6767AB28C99EFB00C72B58 /* ChatRoomView.swift */; };
+		EC6767D828C99EFF00C72B58 /* ChatRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6767AB28C99EFB00C72B58 /* ChatRoomView.swift */; };
 		EC6767D928C99EFF00C72B58 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6767AC28C99EFB00C72B58 /* Persistence.swift */; };
 		EC6767DA28C99EFF00C72B58 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6767AC28C99EFB00C72B58 /* Persistence.swift */; };
-		EC6767DB28C99EFF00C72B58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC6767AD28C99EFF00C72B58 /* Assets.xcassets */; };
-		EC6767DC28C99EFF00C72B58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC6767AD28C99EFF00C72B58 /* Assets.xcassets */; };
+		EC6767DB28C99EFF00C72B58 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC6767AD28C99EFF00C72B58 /* Color.xcassets */; };
+		EC6767DC28C99EFF00C72B58 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC6767AD28C99EFF00C72B58 /* Color.xcassets */; };
+		EC6767F028C9A04E00C72B58 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC6767EF28C9A04E00C72B58 /* Image.xcassets */; };
+		EC6767F128C9A04E00C72B58 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC6767EF28C9A04E00C72B58 /* Image.xcassets */; };
+		EC6767F628C9A0F600C72B58 /* Image+General.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6767F528C9A0F600C72B58 /* Image+General.swift */; };
+		EC6767F728C9A0F600C72B58 /* Image+General.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6767F528C9A0F600C72B58 /* Image+General.swift */; };
+		EC6767F928C9A10000C72B58 /* Color+General.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6767F828C9A10000C72B58 /* Color+General.swift */; };
+		EC6767FA28C9A10000C72B58 /* Color+General.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6767F828C9A10000C72B58 /* Color+General.swift */; };
+		EC67680028C9A38300C72B58 /* ChatRoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6767FF28C9A38300C72B58 /* ChatRoomViewModel.swift */; };
+		EC67680128C9A38300C72B58 /* ChatRoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6767FF28C9A38300C72B58 /* ChatRoomViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,9 +51,9 @@
 /* Begin PBXFileReference section */
 		EC6767A928C99EFB00C72B58 /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		EC6767AA28C99EFB00C72B58 /* MudahChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MudahChatApp.swift; sourceTree = "<group>"; };
-		EC6767AB28C99EFB00C72B58 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EC6767AB28C99EFB00C72B58 /* ChatRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomView.swift; sourceTree = "<group>"; };
 		EC6767AC28C99EFB00C72B58 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		EC6767AD28C99EFF00C72B58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC6767AD28C99EFF00C72B58 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		EC6767B228C99EFF00C72B58 /* MudahChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MudahChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6767B828C99EFF00C72B58 /* MudahChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MudahChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6767BA28C99EFF00C72B58 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
@@ -55,6 +63,10 @@
 		EC6767CB28C99EFF00C72B58 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6767CF28C99EFF00C72B58 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		EC6767D128C99EFF00C72B58 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		EC6767EF28C9A04E00C72B58 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
+		EC6767F528C9A0F600C72B58 /* Image+General.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+General.swift"; sourceTree = "<group>"; };
+		EC6767F828C9A10000C72B58 /* Color+General.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+General.swift"; sourceTree = "<group>"; };
+		EC6767FF28C9A38300C72B58 /* ChatRoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,11 +115,8 @@
 		EC6767A728C99EFB00C72B58 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				EC6767AA28C99EFB00C72B58 /* MudahChatApp.swift */,
-				EC6767AB28C99EFB00C72B58 /* ContentView.swift */,
-				EC6767AC28C99EFB00C72B58 /* Persistence.swift */,
-				EC6767AD28C99EFF00C72B58 /* Assets.xcassets */,
-				EC6767A828C99EFB00C72B58 /* MudahChat.xcdatamodeld */,
+				EC6767EB28C99FA200C72B58 /* Common */,
+				EC6767FB28C9A35700C72B58 /* Feature */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -147,6 +156,101 @@
 				EC6767D128C99EFF00C72B58 /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		EC6767EB28C99FA200C72B58 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EC6767F228C9A0CD00C72B58 /* Extension */,
+				EC6767EE28C9A02000C72B58 /* Resource */,
+				EC6767ED28C99FB600C72B58 /* Persistence */,
+				EC6767EC28C99FAA00C72B58 /* Base */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		EC6767EC28C99FAA00C72B58 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				EC6767AA28C99EFB00C72B58 /* MudahChatApp.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		EC6767ED28C99FB600C72B58 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				EC6767AC28C99EFB00C72B58 /* Persistence.swift */,
+				EC6767A828C99EFB00C72B58 /* MudahChat.xcdatamodeld */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		EC6767EE28C9A02000C72B58 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				EC6767AD28C99EFF00C72B58 /* Color.xcassets */,
+				EC6767EF28C9A04E00C72B58 /* Image.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		EC6767F228C9A0CD00C72B58 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EC6767F428C9A0E100C72B58 /* Image */,
+				EC6767F328C9A0D500C72B58 /* Color */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		EC6767F328C9A0D500C72B58 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				EC6767F828C9A10000C72B58 /* Color+General.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		EC6767F428C9A0E100C72B58 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				EC6767F528C9A0F600C72B58 /* Image+General.swift */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		EC6767FB28C9A35700C72B58 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				EC6767FC28C9A35D00C72B58 /* ChatRoom */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		EC6767FC28C9A35D00C72B58 /* ChatRoom */ = {
+			isa = PBXGroup;
+			children = (
+				EC6767FE28C9A36A00C72B58 /* ViewModel */,
+				EC6767FD28C9A36500C72B58 /* View */,
+			);
+			path = ChatRoom;
+			sourceTree = "<group>";
+		};
+		EC6767FD28C9A36500C72B58 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC6767AB28C99EFB00C72B58 /* ChatRoomView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC6767FE28C9A36A00C72B58 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EC6767FF28C9A38300C72B58 /* ChatRoomViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,7 +378,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC6767DB28C99EFF00C72B58 /* Assets.xcassets in Resources */,
+				EC6767DB28C99EFF00C72B58 /* Color.xcassets in Resources */,
+				EC6767F028C9A04E00C72B58 /* Image.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +387,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC6767DC28C99EFF00C72B58 /* Assets.xcassets in Resources */,
+				EC6767DC28C99EFF00C72B58 /* Color.xcassets in Resources */,
+				EC6767F128C9A04E00C72B58 /* Image.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,7 +416,10 @@
 				EC6767D328C99EFF00C72B58 /* MudahChat.xcdatamodeld in Sources */,
 				EC6767D928C99EFF00C72B58 /* Persistence.swift in Sources */,
 				EC6767D528C99EFF00C72B58 /* MudahChatApp.swift in Sources */,
-				EC6767D728C99EFF00C72B58 /* ContentView.swift in Sources */,
+				EC6767F628C9A0F600C72B58 /* Image+General.swift in Sources */,
+				EC6767F928C9A10000C72B58 /* Color+General.swift in Sources */,
+				EC6767D728C99EFF00C72B58 /* ChatRoomView.swift in Sources */,
+				EC67680028C9A38300C72B58 /* ChatRoomViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,7 +430,10 @@
 				EC6767D428C99EFF00C72B58 /* MudahChat.xcdatamodeld in Sources */,
 				EC6767DA28C99EFF00C72B58 /* Persistence.swift in Sources */,
 				EC6767D628C99EFF00C72B58 /* MudahChatApp.swift in Sources */,
-				EC6767D828C99EFF00C72B58 /* ContentView.swift in Sources */,
+				EC6767F728C9A0F600C72B58 /* Image+General.swift in Sources */,
+				EC6767FA28C9A10000C72B58 /* Color+General.swift in Sources */,
+				EC6767D828C99EFF00C72B58 /* ChatRoomView.swift in Sources */,
+				EC67680128C9A38300C72B58 /* ChatRoomViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
