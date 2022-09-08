@@ -45,6 +45,8 @@
 		EC7D492828CA425C00C33208 /* MudahChatTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7D492728CA425C00C33208 /* MudahChatTargetType.swift */; };
 		EC7D492D28CA46DB00C33208 /* ChatTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7D492C28CA46DB00C33208 /* ChatTargetType.swift */; };
 		EC7D493028CA480A00C33208 /* Encodable+toJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7D492F28CA480A00C33208 /* Encodable+toJSON.swift */; };
+		EC7D493228CA495900C33208 /* ChatRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7D493128CA495900C33208 /* ChatRemoteDataSource.swift */; };
+		EC7D493428CA49A000C33208 /* ChatDefaultRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7D493328CA49A000C33208 /* ChatDefaultRemoteDataSource.swift */; };
 		ECFAF63428C9C3BB004327E9 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF63328C9C3BB004327E9 /* Chat.swift */; };
 		ECFAF63628C9C46B004327E9 /* ChatType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF63528C9C46B004327E9 /* ChatType.swift */; };
 		ECFAF63928C9C598004327E9 /* Date+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAF63828C9C598004327E9 /* Date+String.swift */; };
@@ -104,6 +106,8 @@
 		EC7D492728CA425C00C33208 /* MudahChatTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MudahChatTargetType.swift; sourceTree = "<group>"; };
 		EC7D492C28CA46DB00C33208 /* ChatTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTargetType.swift; sourceTree = "<group>"; };
 		EC7D492F28CA480A00C33208 /* Encodable+toJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+toJSON.swift"; sourceTree = "<group>"; };
+		EC7D493128CA495900C33208 /* ChatRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRemoteDataSource.swift; sourceTree = "<group>"; };
+		EC7D493328CA49A000C33208 /* ChatDefaultRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDefaultRemoteDataSource.swift; sourceTree = "<group>"; };
 		ECFAF63328C9C3BB004327E9 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		ECFAF63528C9C46B004327E9 /* ChatType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatType.swift; sourceTree = "<group>"; };
 		ECFAF63828C9C598004327E9 /* Date+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+String.swift"; sourceTree = "<group>"; };
@@ -365,6 +369,8 @@
 			isa = PBXGroup;
 			children = (
 				EC7D492B28CA46CC00C33208 /* TargetType */,
+				EC7D493128CA495900C33208 /* ChatRemoteDataSource.swift */,
+				EC7D493328CA49A000C33208 /* ChatDefaultRemoteDataSource.swift */,
 			);
 			path = Remote;
 			sourceTree = "<group>";
@@ -626,6 +632,7 @@
 				ECFAF63928C9C598004327E9 /* Date+String.swift in Sources */,
 				EC7D492228CA3EA200C33208 /* Moya+Request.swift in Sources */,
 				EC6767D328C99EFF00C72B58 /* MudahChat.xcdatamodeld in Sources */,
+				EC7D493228CA495900C33208 /* ChatRemoteDataSource.swift in Sources */,
 				EC7D491128CA232300C33208 /* MultilineTextField.swift in Sources */,
 				EC67681328C9AF0900C72B58 /* ChatBubble.swift in Sources */,
 				EC6767D928C99EFF00C72B58 /* Persistence.swift in Sources */,
@@ -637,6 +644,7 @@
 				ECFAF65128C9CEE5004327E9 /* ChatBubbleViewModel.swift in Sources */,
 				ECFAF64228C9C5DA004327E9 /* OptionalString+OrEmpty.swift in Sources */,
 				ECFAF64028C9C5DA004327E9 /* OptionalDouble+OrZero.swift in Sources */,
+				EC7D493428CA49A000C33208 /* ChatDefaultRemoteDataSource.swift in Sources */,
 				EC7D492428CA3FBB00C33208 /* ErrorResponse.swift in Sources */,
 				EC7D490E28CA1D7D00C33208 /* MessageFieldView.swift in Sources */,
 				EC6767F928C9A10000C72B58 /* Color+General.swift in Sources */,
