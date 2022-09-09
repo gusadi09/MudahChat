@@ -37,4 +37,9 @@ enum LocalizationText {
 		"chat_room_not_active_message",
 		comment: "This string for message if you not active in last minute"
 	)
+
+	static let chatRoomHeaderConnecting = NSLocalizedString(
+		"chat_room_header_connecting",
+		comment: "This string for header title when internet lost or reconnecting"
+	)
 }

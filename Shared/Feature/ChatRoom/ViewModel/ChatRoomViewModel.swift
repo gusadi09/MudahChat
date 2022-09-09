@@ -7,10 +7,13 @@
 
 import Combine
 import Foundation
+import Network
 
 final class ChatRoomViewModel: ObservableObject {
 	
 	private let chatRepository: ChatRepository
+	private let monitor = NWPathMonitor()
+	private let queue = DispatchQueue(label: "NetworkMonitor")
 	private var cancellables = Set<AnyCancellable>()
 	private var timer: Timer?
 
@@ -21,9 +24,18 @@ final class ChatRoomViewModel: ObservableObject {
 	@Published var chatArray = [Chat]()
 	@Published var localChatHistory = [Message]()
 	@Published var chatMessage = MessageBody(message: "")
+	@Published var isConnected = false
 	
 	init(chatRepository: ChatRepository = ChatDefaultRepository()) {
 		self.chatRepository = chatRepository
+
+		monitor.pathUpdateHandler = { [weak self] path in
+			DispatchQueue.main.async {
+				self?.isConnected = path.status == .satisfied ? true : false
+			}
+		}
+
+		monitor.start(queue: queue)
 	}
 	
 	func loadJSONChat() {
