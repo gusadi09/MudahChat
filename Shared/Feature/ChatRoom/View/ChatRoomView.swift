@@ -9,18 +9,22 @@ import SwiftUI
 
 struct ChatRoomView: View {
 
+	@FocusState var focused: Bool
 	@ObservedObject var viewModel = ChatRoomViewModel()
 
 	var body: some View {
 		GeometryReader { geo in
 			VStack(spacing: 0) {
-				ChatRoomHeader(geo: geo)
+				ChatRoomHeader(geo: geo, connection: $viewModel.isConnected)
 					.alert(isPresented: $viewModel.isError) {
 						Alert(
 							title: Text(LocalizationText.generalError),
 							message: Text(viewModel.error),
 							dismissButton: .default(Text("OK"))
 						)
+					}
+					.onTapGesture {
+						focused = false
 					}
 
 				ScrollViewReader { scroll in
@@ -40,12 +44,18 @@ struct ChatRoomView: View {
 								scroll.scrollTo(newValue?.id ?? UUID(), anchor: .bottom)
 							}
 						}
+						.onTapGesture {
+							focused = false
+						}
 
 						MessageFieldView(
+							focused: _focused,
 							message: $viewModel.chatMessage.message,
 							isLoading: $viewModel.isLoading
 						) {
-							viewModel.sendMessage()
+							if viewModel.isConnected {
+								viewModel.sendMessage()
+							}
 						}
 					}
 				}

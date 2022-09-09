@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct MessageFieldView: View {
-	
+
+	@FocusState var focused: Bool
 	@Binding var message: String
 	@Binding var isLoading: Bool
 	var action: () -> Void
@@ -21,6 +22,7 @@ struct MessageFieldView: View {
 					RoundedRectangle(cornerRadius: 10)
 						.foregroundColor(.white)
 				)
+				.focused($focused)
 			
 			if isLoading {
 				ProgressView()

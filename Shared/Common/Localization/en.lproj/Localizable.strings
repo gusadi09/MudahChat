@@ -12,3 +12,4 @@
 "general_error" = "Error!";
 "general_message_placeholder" = "Type your message here...";
 "chat_room_not_active_message" = "Are you there?";
+"chat_room_header_connecting" = "Connecting...";
