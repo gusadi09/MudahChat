@@ -32,4 +32,9 @@ enum LocalizationText {
 		"general_message_placeholder",
 		comment: "This string for placeholder text on message textfield"
 	)
+
+	static let chatRoomNotActiveMessage = NSLocalizedString(
+		"chat_room_not_active_message",
+		comment: "This string for message if you not active in last minute"
+	)
 }

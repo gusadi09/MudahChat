@@ -11,3 +11,4 @@
 "chat_room_failed_to_load" = "Failed to load the json data";
 "general_error" = "Error!";
 "general_message_placeholder" = "Type your message here...";
+"chat_room_not_active_message" = "Are you there?";
