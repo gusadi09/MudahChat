@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  MudahChat
+
+  Created by Gus Adi on 08/09/22.
+  
+*/
+
+"chat_room_header_title" = "Mudah Assistant";
+"chat_room_file_not_found_error" = "Can't found json file";
+"chat_room_failed_to_load" = "Failed to load the json data";
+"general_error" = "Error!";
+"general_message_placeholder" = "Type your message here...";
+"chat_room_not_active_message" = "Are you there?";
+"chat_room_header_connecting" = "Connecting...";

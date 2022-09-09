@@ -9,6 +9,6 @@ import SwiftUI
 
 extension Color {
 	enum GeneralTheme {
-		
+		static let primaryRed = Color("primary-red")
 	}
 }
