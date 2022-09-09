@@ -12,7 +12,9 @@ final class ChatRoomViewModel: ObservableObject {
 	
 	private let chatRepository: ChatRepository
 	private var cancellables = Set<AnyCancellable>()
-	
+	private var timer: Timer?
+
+	@Published var isNotActiveLastMinute = false
 	@Published var isLoading = false
 	@Published var isError = false
 	@Published var error = ""
@@ -72,7 +74,8 @@ final class ChatRoomViewModel: ObservableObject {
 					
 				case .finished:
 					self.isLoading = false
-					
+					self.isNotActiveLastMinute = false
+					self.checkingInactive()
 				}
 			} receiveValue: { response in
 				let chat = Chat(
@@ -140,6 +143,40 @@ final class ChatRoomViewModel: ObservableObject {
 			}
 			
 			loadLocalChat()
+		}
+
+		checkingInactive()
+	}
+
+	func checkingInactive() {
+		if let timer = timer {
+			timer.invalidate()
+		}
+
+		let getting = Timer.scheduledTimer(timeInterval: 60.0, target: self, selector: #selector(sendNotActiveMessage), userInfo: nil, repeats: true)
+
+		self.timer = getting
+	}
+
+	@objc func sendNotActiveMessage() {
+		if !isNotActiveLastMinute {
+			let chat = Chat(
+				timestamp: Date(),
+				direction: ChatType.incoming,
+				message: LocalizationText.chatRoomNotActiveMessage
+			)
+
+			chatArray.append(chat)
+
+			saveToLocalChat(chat)
+
+			loadLocalChat()
+
+			isNotActiveLastMinute = true
+
+			if let timer = timer {
+				timer.invalidate()
+			}
 		}
 	}
 }

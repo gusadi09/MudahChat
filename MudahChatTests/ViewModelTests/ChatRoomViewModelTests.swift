@@ -18,4 +18,9 @@ class ChatRoomViewModelTests: XCTestCase {
 		XCTAssertFalse(sut.chatArray.isEmpty, "Chat Array is Not Empty")
 	}
 
+	func test_initialState_mustEmpty() {
+		sut.startRequest()
+		
+		XCTAssertTrue(sut.isLoading)
+	}
 }
